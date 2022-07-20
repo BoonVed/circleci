@@ -15,5 +15,7 @@ jobs:
           command: |
             mkdir crdroid
             cd crdroid
+            git config --global user.email "you@example.com"
+            git config --global user.name "Your Name"
             repo init --no-repo-verify --depth=1 -u https://github.com/crdroidandroid/android.git -b 12.1
             repo sync -j8
