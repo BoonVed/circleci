@@ -4,7 +4,7 @@ jobs:
     machine: # executor type
       image: ubuntu-2204:2022.04.2 # # recommended linux image - includes Ubuntu 
     steps:
-      - run: sudo apt update && sudo apt upgrade
+      - run: sudo apt update
       - run:
           name: Fetch Dependencies
           command: |
