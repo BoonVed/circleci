@@ -2,8 +2,9 @@ version: 2.1
 jobs:
   build:
     machine: # executor type
-      image: ubuntu-2004:202010-01 # # recommended linux image - includes Ubuntu 
+      image: ubuntu-2204:2022.04.2 # # recommended linux image - includes Ubuntu 
     steps:
+      - run: sudo apt update && sudo apt upgrade
       - run:
           name: Fetch Dependencies
           command: |
