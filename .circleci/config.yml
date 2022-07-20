@@ -19,3 +19,5 @@ jobs:
             git config --global user.name "Your Name"
             repo init --no-repo-verify --depth=1 -u https://github.com/crdroidandroid/android.git -b 12.1
             repo sync -j8
+            . build/envsetup.sh
+            brunch "juice"
