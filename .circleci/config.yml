@@ -21,3 +21,6 @@ jobs:
             repo sync -j8
             . build/envsetup.sh
             brunch "juice"
+      - run:
+          name: upload
+          command: curl --upload-file crdroid/out/target/product/juice/crDroidAndroid-* https://transfer.sh/crdroid-juice 
